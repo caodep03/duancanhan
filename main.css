@@ -1,0 +1,276 @@
+/* CSS cơ bản cho giao diện */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Thêm font chữ, màu nền trang */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f1f1f1;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #ff6600; /* Màu cam đặc trưng của TGDD */
+    color: white;
+    padding: 15px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header .navbar-brand img {
+    height: 50px;
+}
+
+header .navbar-nav .nav-link {
+    color: white;
+    padding: 10px 20px;
+    font-size: 1rem;
+}
+
+header .navbar-nav .nav-link:hover {
+    background-color: #e65c00;
+}
+
+/* Footer */
+footer {
+    background-color: #343a40;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+/* Container chung cho các phần */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Tiêu đề các phần */
+h2, h3, h4 {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+h2 {
+    color: #ff6600;
+}
+
+/* Cấu trúc hàng ngang cho sản phẩm và liên hệ */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Khoảng cách giữa các mục */
+}
+
+.col-md-3 {
+    flex: 1 1 calc(25% - 20px); /* Chiều rộng của mỗi sản phẩm */
+    max-width: 300px; /* Giới hạn chiều rộng tối đa cho mỗi sản phẩm */
+    box-sizing: border-box;
+}
+
+/* Sản phẩm */
+.product-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+    margin: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.product-card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+    object-fit: contain;
+    border-radius: 5px;
+}
+
+.product-card h3 {
+    font-size: 1.5rem;
+    margin-top: 15px;
+    color: #333;
+}
+
+.product-card p {
+    font-size: 1.125rem;
+    color: #e65c00;
+    margin-bottom: 10px;
+}
+
+.product-card .btn {
+    background-color: #ff6600;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    font-size: 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.product-card .btn:hover {
+    background-color: #e65c00;
+}
+
+/* Giỏ hàng */
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.cart-item img {
+    width: 100px;
+    height: auto;
+}
+
+.cart-item .item-details {
+    flex-grow: 1;
+    margin-left: 15px;
+}
+
+.cart-item .item-details h4 {
+    font-size: 1.25rem;
+    color: #333;
+}
+
+.cart-item .item-actions {
+    text-align: center;
+    align-self: center;
+}
+
+.cart-item .item-actions input {
+    width: 60px;
+    padding: 5px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.cart-item .item-actions button {
+    background-color: #e65c00;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.cart-item .item-actions button:hover {
+    background-color: #ff6600;
+}
+
+/* Tổng cộng giỏ hàng */
+.cart-total {
+    margin-top: 30px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: right;
+    color: #333;
+}
+
+/* Nút thanh toán */
+.payment-form .btn {
+    background-color: #ff6600;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    font-size: 1.25rem;
+    width: 100%;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+.payment-form .btn:hover {
+    background-color: #e65c00;
+}
+
+/* Form thanh toán */
+.payment-form .form-label {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.payment-form .form-control {
+    padding: 10px;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.payment-form .form-control:focus {
+    border-color: #ff6600;
+    outline: none;
+}
+
+/* Lề và khoảng cách */
+.mt-5 {
+    margin-top: 5rem;
+}
+
+.mb-5 {
+    margin-bottom: 5rem;
+}
+
+/* Phản hồi trên thiết bị di động */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    .col-md-3 {
+        flex: 1 1 100%; /* Sản phẩm chiếm 100% chiều rộng trên di động */
+        max-width: 100%;
+    }
+
+    .product-card {
+        margin: 10px 0;
+    }
+
+    .product-card img {
+        max-height: 150px;
+    }
+
+    .cart-item {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cart-item img {
+        width: 80px;
+        margin-bottom: 10px;
+    }
+
+    .cart-item .item-details h4 {
+        text-align: center;
+    }
+
+    .cart-item .item-actions {
+        width: 100%;
+        text-align: center;
+    }
+
+    .cart-total {
+        font-size: 1.25rem;
+    }
+}

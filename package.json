@@ -1,0 +1,22 @@
+{
+    "name": "phone-store",
+    "version": "1.0.0",
+    "description": "Ứng dụng web bán điện thoại với các tính năng như giỏ hàng, thanh toán và quản lý người dùng.",
+    "main": "index.html",
+    "scripts": {
+      "start": "live-server", 
+      "build": "echo \"Nothing to build yet\""
+    },
+    "author": "Tên của bạn",
+    "license": "MIT",
+    "dependencies": {
+      "live-server": "^1.2.1"
+    },
+    "devDependencies": {
+      "autoprefixer": "^10.3.7",
+      "cssnano": "^5.0.6",
+      "postcss": "^8.3.6",
+      "postcss-cli": "^9.1.0"
+    }
+  }
+  

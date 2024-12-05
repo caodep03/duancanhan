@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liên Hệ - Mua Điện Thoại</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="#"><img src="images/logo.png" alt="Logo" height="40"></a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Trang chủ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="product.html">Sản phẩm</a></li>
+                    <li class="nav-item"><a class="nav-link" href="cart.html">Giỏ hàng</a></li>
+                    <li class="nav-item"><a class="nav-link" href="checkout.html">Thanh toán</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Contact Section -->
+    <main class="container mt-5">
+        <h2>Liên Hệ</h2>
+
+        <!-- Thông tin liên hệ -->
+        <section>
+            <h3>Thông tin liên hệ</h3>
+            <p>Chúng tôi luôn sẵn sàng hỗ trợ bạn! Dưới đây là thông tin liên hệ của chúng tôi:</p>
+            <ul>
+                <li><strong>Địa chỉ:</strong> 1200 Lê Hồng Phong, P. Phước Long, TP. Nha Trang, T. Khánh Hòa (Ngay vòng xoay Lê Hồng Phong), Việt Nam</li>
+                <li><strong>Điện thoại:</strong> 028 38125960</li>
+                <li><strong>Email:</strong> <a href="cskh@thegioididong.com">support@phonestore.vn</a></li>
+            </ul>
+        </section>
+
+        <!-- Câu hỏi thường gặp (FAQs) -->
+        <section>
+            <h3>Câu hỏi thường gặp (FAQs)</h3>
+            <ul>
+                <li><strong>1. Làm thế nào để đặt hàng?</strong> <br> Bạn chỉ cần chọn sản phẩm, thêm vào giỏ hàng và tiến hành thanh toán.</li>
+                <li><strong>2. Tôi có thể trả lại sản phẩm không?</strong> <br> Chúng tôi hỗ trợ đổi trả sản phẩm trong vòng 30 ngày kể từ ngày nhận hàng.</li>
+                <li><strong>3. Tôi có thể thay đổi phương thức thanh toán sau khi đặt hàng không?</strong> <br> Không, bạn cần chọn phương thức thanh toán khi thanh toán và không thể thay đổi sau đó.</li>
+            </ul>
+        </section>
+
+        <!-- Hỗ trợ trực tuyến -->
+        <section>
+            <h3>Hỗ trợ trực tuyến</h3>
+            <p>Chúng tôi cung cấp hỗ trợ trực tuyến qua chatbox hoặc qua form liên hệ dưới đây.</p>
+            <form action="submit-form.html" method="POST" class="contact-form">
+                <div class="form-group">
+                    <label for="name">Họ và tên</label>
+                    <input type="text" id="name" name="name" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Tin nhắn của bạn</label>
+                    <textarea id="message" name="message" class="form-control" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-success">Gửi tin nhắn</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Mua điện thoại. Tất cả quyền được bảo vệ.</p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
